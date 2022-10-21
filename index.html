@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <title>Document</title>
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark   bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand px-5 fs-3" href="#">SCHOOL</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active px-3 fs-5 " aria-current="page" href="table.html">Home</a>
+        </li>
+       
+      </ul>
+      <span class="navbar-text px-3 mt-1">
+        <img src="img/school-solid-24 (1).png" alt="school">
+      </span>
+    </div>
+  </div>
+</nav>
+
+<body onload="onloadfromAPI()">
+  <h3 class="fs-2 d-flax text-center mt-5"></h3>
+
+  <div class="container mt-5">
+    <form class=" mt-5 mb-5 " name="myform" id="myform">
+    <div class="row ">
+     
+      <div class="row ">
+        <div class="col">
+          <p class="fs-5">FirstName:</p>
+          <input type="text" class="form-control" placeholder="Enter Your First Name" id="name" aria-label="Last name">
+          <p id="nameerr"  style="color: red;"></p>
+        </div>
+        
+        <div class="col">
+          <p class="fs-5">FatherName:</p>
+          <input type="text" class="form-control" placeholder="Enter Your FatherName" id="fathername" aria-label="age">
+          <p id="fname"  style="color: red;"></p>
+        </div>
+        
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          <p class="fs-5">Gender:</p>
+          <select class="form-select" id="gender" aria-label="Default select example">
+            <option value="">choose</option>
+            <option value="Female">Female</option>
+            <option value="male">Male</option>
+            
+          </select>
+          <!-- <input type="text" class="form-control" placeholder="Enter Your gender" id="gender" aria-label="gender"> -->
+          <p id="genderer"  style="color: red;"></p>
+        </div>
+        
+        <div class="col">
+          <p class="fs-5">Age:</p>
+          <input type="numbers" class="form-control" placeholder="Enter Your Age" id="age" aria-label="age">
+          <p id="ageer"  style="color: red;"></p>
+  
+        </div>
+        
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          <p class="fs-5"> Phonenumber:</p>
+          <input type="numbers" class="form-control" placeholder="Enter Your Phonenumber" id="phone"
+            aria-label="phonenumber ">
+            <p id="phoneerr" style="color: red;"></p>
+          </div>
+        
+        <div class="col">
+          <p class="fs-5">Address:</p>
+          <input type="text" class="form-control" placeholder="Enter Your Address" id="address" aria-label="Address">
+          <p id="adderr" style="color: red;"></p>
+        </div>
+      
+      </div>
+     
+    </div>
+    </form>
+    <div class="row">
+      <div class="col">
+        <button type="submit" id="add" class="btn btn-primary  fs-5 mt-4">submit</button>
+        <a href="table.html">
+          <button type="submit" style="background-color:rgba(235, 120, 13, 0.884) ;" class="btn fs-5 text-white  mt-4">Back To Table</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
